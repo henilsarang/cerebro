@@ -1,4 +1,4 @@
-"""Day 2 - Tools: plain functions the model can call, fenced into one directory.
+"""Tools: plain functions the model can call, fenced into one directory.
 
 Concept: a tool is a name, a JSON schema the model reads, and a callable the
 harness runs. The @tool decorator derives the schema from a function's own

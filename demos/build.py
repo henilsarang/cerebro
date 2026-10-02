@@ -1,6 +1,6 @@
-"""Day 2 demo - a coding agent with real tools behind a security policy.
+"""Build demo - a coding agent with real tools behind a security policy.
 
-Concept: day 1's loop is unchanged; today only fills its sockets. The tools
+Concept: the loop is unchanged; this demo only fills its sockets. The tools
 come from core_tools() fenced into a scratch directory, and Policy.check is
 plugged in as before_tool, so dangerous commands come back as BLOCKED
 results the model must respond to.
@@ -10,7 +10,7 @@ Design rules:
   * yolo mode is safe enough for a demo only because the deny patterns
     still apply and every path is fenced to the scratch directory.
 
-Run from the repo root:  python demos/day2_build.py "your task"
+Run from the repo root:  python demos/build.py "your task"
 """
 import os
 import sys

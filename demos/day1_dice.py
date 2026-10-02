@@ -6,7 +6,8 @@ the result, and reasons about it in plain text.
 
 Design rules:
   * The tool is written by hand, with no registry or decorator, so every
-    moving part is visible. Day 2 replaces this with a proper tool module.
+    moving part is visible. cerebro/tools.py replaces this with a
+    proper tool module.
   * Arguments arrive as the model sent them; count is declared as a string
     and converted here, the tool's job rather than the loop's.
 
@@ -54,7 +55,7 @@ def on_event(kind, payload):
 
 
 def allow_all(call):
-    """Permit every tool call (day 2 adds real policy)."""
+    """Permit every tool call (cerebro/security.py adds real policy)."""
     return None
 
 

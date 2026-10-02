@@ -1,4 +1,4 @@
-"""Day 2 - Security: a policy that decides which tool calls may run.
+"""Security: a policy that decides which tool calls may run.
 
 Concept: the loop asks before_tool(call) before every execution. Policy.check
 is that hook: it returns None to allow a call or a reason string to block it,
