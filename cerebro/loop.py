@@ -1,4 +1,4 @@
-"""Day 1 - The agent loop: call the model, run its tools, repeat.
+"""The agent loop: call the model, run its tools, repeat.
 
 Concept: an agent is a loop. The model replies; if the reply asks for tools,
 the harness runs them, appends the results, and asks again. When a reply
@@ -8,7 +8,7 @@ Design rules:
   * The loop never crashes because a tool did: every failure becomes a
     string result the model can read and recover from.
   * Policy lives outside the loop. before_tool decides what may run;
-    on_event decides what gets shown; before_turn (day 3) reshapes context.
+    on_event decides what gets shown; before_turn reshapes context.
   * Bounded: after max_turns the model is told to wrap up and gets one
     final call with no tools, so it must answer in text.
 """

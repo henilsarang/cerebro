@@ -1,4 +1,4 @@
-"""Day 1 - The provider: one function between the harness and the model.
+"""The provider: one function between the harness and the model.
 
 Concept: an agent harness talks to a model through a single narrow call,
 complete(), which takes a provider-neutral message list and returns a

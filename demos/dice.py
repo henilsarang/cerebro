@@ -1,4 +1,4 @@
-"""Day 1 demo - one hand-written tool driven through the agent loop.
+"""Dice demo - one hand-written tool driven through the agent loop.
 
 Concept: a tool is just an object with a JSON-schema .spec the model reads
 and a .run callable the harness executes. Here the model rolls dice, reads
@@ -11,7 +11,7 @@ Design rules:
   * Arguments arrive as the model sent them; count is declared as a string
     and converted here, the tool's job rather than the loop's.
 
-Run from the repo root:  python demos/day1_dice.py
+Run from the repo root:  python demos/dice.py
 """
 import os
 import random
